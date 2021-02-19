@@ -1,0 +1,13 @@
+E:\VS_Codes\HCL\HR_Intermediate_API\HRapi2021\HRapi2021\bin\Debug\netcoreapp3.1\HRapi2021.exe
+E:\VS_Codes\HCL\HR_Intermediate_API\HRapi2021\HRapi2021\bin\Debug\netcoreapp3.1\HRapi2021.deps.json
+E:\VS_Codes\HCL\HR_Intermediate_API\HRapi2021\HRapi2021\bin\Debug\netcoreapp3.1\HRapi2021.runtimeconfig.json
+E:\VS_Codes\HCL\HR_Intermediate_API\HRapi2021\HRapi2021\bin\Debug\netcoreapp3.1\HRapi2021.runtimeconfig.dev.json
+E:\VS_Codes\HCL\HR_Intermediate_API\HRapi2021\HRapi2021\bin\Debug\netcoreapp3.1\HRapi2021.dll
+E:\VS_Codes\HCL\HR_Intermediate_API\HRapi2021\HRapi2021\bin\Debug\netcoreapp3.1\HRapi2021.pdb
+E:\VS_Codes\HCL\HR_Intermediate_API\HRapi2021\HRapi2021\obj\Debug\netcoreapp3.1\HRapi2021.csprojAssemblyReference.cache
+E:\VS_Codes\HCL\HR_Intermediate_API\HRapi2021\HRapi2021\obj\Debug\netcoreapp3.1\HRapi2021.AssemblyInfoInputs.cache
+E:\VS_Codes\HCL\HR_Intermediate_API\HRapi2021\HRapi2021\obj\Debug\netcoreapp3.1\HRapi2021.AssemblyInfo.cs
+E:\VS_Codes\HCL\HR_Intermediate_API\HRapi2021\HRapi2021\obj\Debug\netcoreapp3.1\HRapi2021.csproj.CoreCompileInputs.cache
+E:\VS_Codes\HCL\HR_Intermediate_API\HRapi2021\HRapi2021\obj\Debug\netcoreapp3.1\HRapi2021.dll
+E:\VS_Codes\HCL\HR_Intermediate_API\HRapi2021\HRapi2021\obj\Debug\netcoreapp3.1\HRapi2021.pdb
+E:\VS_Codes\HCL\HR_Intermediate_API\HRapi2021\HRapi2021\obj\Debug\netcoreapp3.1\HRapi2021.genruntimeconfig.cache
