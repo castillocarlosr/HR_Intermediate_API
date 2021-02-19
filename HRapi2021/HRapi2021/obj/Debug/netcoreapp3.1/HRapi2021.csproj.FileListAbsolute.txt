@@ -11,3 +11,9 @@ E:\VS_Codes\HCL\HR_Intermediate_API\HRapi2021\HRapi2021\obj\Debug\netcoreapp3.1\
 E:\VS_Codes\HCL\HR_Intermediate_API\HRapi2021\HRapi2021\obj\Debug\netcoreapp3.1\HRapi2021.dll
 E:\VS_Codes\HCL\HR_Intermediate_API\HRapi2021\HRapi2021\obj\Debug\netcoreapp3.1\HRapi2021.pdb
 E:\VS_Codes\HCL\HR_Intermediate_API\HRapi2021\HRapi2021\obj\Debug\netcoreapp3.1\HRapi2021.genruntimeconfig.cache
+E:\VS_Codes\HCL\HR_Intermediate_API\HRapi2021\HRapi2021\bin\Debug\netcoreapp3.1\Elasticsearch.Net.dll
+E:\VS_Codes\HCL\HR_Intermediate_API\HRapi2021\HRapi2021\bin\Debug\netcoreapp3.1\MediatR.dll
+E:\VS_Codes\HCL\HR_Intermediate_API\HRapi2021\HRapi2021\bin\Debug\netcoreapp3.1\Nest.dll
+E:\VS_Codes\HCL\HR_Intermediate_API\HRapi2021\HRapi2021\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+E:\VS_Codes\HCL\HR_Intermediate_API\HRapi2021\HRapi2021\bin\Debug\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll
+E:\VS_Codes\HCL\HR_Intermediate_API\HRapi2021\HRapi2021\obj\Debug\netcoreapp3.1\HRapi2021.csproj.CopyComplete

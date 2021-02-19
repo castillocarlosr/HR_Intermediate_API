@@ -1,8 +1,16 @@
 {
   "version": 2,
-  "dgSpecHash": "1UKZyGW85mODKsSLXnofLEY4h957Sn26nuoQSOLa6udHGMmfdZEhNhj2x38tgWc8KKP5qcRta0bes4905c/AwQ==",
+  "dgSpecHash": "lXYomblHqmbXodlcjsyg4HGjpkH64FVSBfocUT+faeKQf+9f4uwje/GIZ139tLZrpBMQIu9DrP+ZJ/AQP3ihJA==",
   "success": true,
   "projectFilePath": "E:\\VS_Codes\\HCL\\HR_Intermediate_API\\HRapi2021\\HRapi2021\\HRapi2021.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\casti\\.nuget\\packages\\elasticsearch.net\\7.11.1\\elasticsearch.net.7.11.1.nupkg.sha512",
+    "C:\\Users\\casti\\.nuget\\packages\\mediatr\\9.0.0\\mediatr.9.0.0.nupkg.sha512",
+    "C:\\Users\\casti\\.nuget\\packages\\microsoft.csharp\\4.6.0\\microsoft.csharp.4.6.0.nupkg.sha512",
+    "C:\\Users\\casti\\.nuget\\packages\\nest\\7.11.1\\nest.7.11.1.nupkg.sha512",
+    "C:\\Users\\casti\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
+    "C:\\Users\\casti\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
+    "C:\\Users\\casti\\.nuget\\packages\\system.diagnostics.diagnosticsource\\5.0.0\\system.diagnostics.diagnosticsource.5.0.0.nupkg.sha512"
+  ],
   "logs": []
 }
