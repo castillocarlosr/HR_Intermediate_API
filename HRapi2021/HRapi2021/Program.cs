@@ -20,7 +20,7 @@ namespace HRapi2021
 
             ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12;
 
-            var respTwo = GetReleases(htpClientRhandler);
+            var respTwo = GetReleases(htpClientRhandler, "Barcelona", 2011);
             var githubReTwo = JsonConvert.DeserializeObject<Football>(respTwo);
 
             //foreach (var release in githubReTwo)
@@ -28,13 +28,17 @@ namespace HRapi2021
             //    Console.WriteLine("Team1 : {0}", release.Team1);
             //    Console.WriteLine();
             //}
-            Console.WriteLine("OHHHHH " + githubReTwo.TotalPages + "WEEEEEE");
+            Console.WriteLine("OHHHHH " + githubReTwo.Team1 + "WEEEEEE");
+            Console.WriteLine( githubReTwo.TotalPages);
+            Console.WriteLine("goalsss  "+githubReTwo.Team1Goals);
+            Console.WriteLine("Goals");
             Console.ReadLine();
         }
 
-        public static string GetReleases(MediatR.IRequestHandler requestHandler)
+        public static string GetReleases(MediatR.IRequestHandler requestHandler, string team, int year)
         {
-            return requestHandler.GetReleases(RequestConstants.Url);
+            //return requestHandler.GetReleases(RequestConstants.Url);
+            return requestHandler.GetReleases(RequestConstants.ReturnPages(team, year));
         }
     }
 }
