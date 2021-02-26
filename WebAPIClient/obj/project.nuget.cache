@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "2wbqDjWNyxAA5pi2bAQx8Zymn0F3jaeIHlVesmQMQVVR2h9Rksb9HC7sbptltfG6V3NN+B9doopeR9A22Pnh0g==",
+  "dgSpecHash": "/rzxfs/v38tGviIUscxFH3oGtk36GIvirTNjBnuEXU7/n8Wnk6twDHEBTmn0sICw+FGTSK/6n0npyRHswgB90g==",
   "success": true,
   "projectFilePath": "E:\\VS_Codes\\HCL\\HR_Intermediate_API\\WebAPIClient\\WebAPIClient.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\casti\\.nuget\\packages\\system.text.json\\5.0.1\\system.text.json.5.0.1.nupkg.sha512"
+  ],
   "logs": []
 }
