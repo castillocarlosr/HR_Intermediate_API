@@ -25,8 +25,9 @@ namespace WebAPIClient
             client.DefaultRequestHeaders.Add("User-Agent", ".NET Foundation Repository Reporter");
 
             var stringTask = client.GetStringAsync("https://api.github.com/orgs/dotnet/repos");
+            var stringTask2 = client.GetStringAsync("https://jsonmock.hackerrank.com/api/football_matches?year=2011&team1=Barcelona&page=1");
 
-            var msg = await stringTask;
+            var msg = await stringTask2;
             Console.Write(msg);
         }
     }
