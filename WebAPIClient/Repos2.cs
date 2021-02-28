@@ -6,12 +6,13 @@ using System.Threading.Tasks;
 
 namespace WebAPIClient
 {
-    class Repository
+    class Repos2
     {
-        public string name { get; set; }
+        public string page { get; set; }
 
-        //public string Description { get; set; }
+        public int total_pages { get; set; }
 
-        //public Uri GitHubHomeUrl { get; set; }
+        public string team1goals { get; set; }
+
     }
 }
