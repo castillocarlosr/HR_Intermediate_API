@@ -14,12 +14,23 @@ namespace WebAPIClient
         static async Task Main(string[] args)
         {
             Console.WriteLine("Like all modern .NET APIs, HttpClient supports only async methods for its long-running APIs.");
-            Console.WriteLine(" Start by making an async method. ");
+            //Console.WriteLine(" Start by making an async method. ");
+
+            var repositories = await ProcessRepositories();
             
+            foreach (var item in repositories)
+            {
+                //Console.WriteLine(item.Name);
+                //Console.WriteLine(item.Description);
+                //Console.WriteLine(item.Homepage);
+                Console.WriteLine(item.Owner["login"]);
+            }
+
             await ProcessRepositories();
         }
 
-        private static async Task ProcessRepositories()
+        //private static async Task ProcessRepositories()
+        private static async Task<List<Repository>> ProcessRepositories()
         {
             client.DefaultRequestHeaders.Accept.Clear();
             client.DefaultRequestHeaders.Accept.Add(
@@ -31,24 +42,26 @@ namespace WebAPIClient
             var stringTask = client.GetStringAsync("https://api.github.com/orgs/dotnet/repos");
             var stringTask2 = client.GetStringAsync("https://jsonmock.hackerrank.com/api/football_matches?year=2011&team1=Barcelona&page=1");
             */
-            Console.WriteLine("TESSSSSTTTTTTTTTTTTTTTTTT!!!!!!!!!!HERE");
+            Console.WriteLine("TOP!!!!!!!!!!HERE");
             var streamTask = client.GetStreamAsync("https://api.github.com/orgs/dotnet/repos");
             var repositories = await JsonSerializer.DeserializeAsync<List<Repository>>(await streamTask);
-            var streamTask2 = client.GetStreamAsync("https://jsonmock.hackerrank.com/api/football_matches?year=2011&team1=Barcelona&page=1");
-            var repositories2 = await JsonSerializer.DeserializeAsync<Repos2>(await streamTask2);
+            Console.WriteLine("BOTTOM!!!!!!!!!!HERE");
+            return repositories;
+            //var streamTask2 = client.GetStreamAsync("https://jsonmock.hackerrank.com/api/football_matches?year=2011&team1=Barcelona&page=1");
+            //var repositories2 = await JsonSerializer.DeserializeAsync<Repos2>(await streamTask2);
 
             /*
-            var msg = await stringTask2;
+            var msg = await stringTask;
             Console.Write(msg);
             */
 
             //foreach (var item in repositories)
             //{
-            //    Console.WriteLine(item.name);
+            //    Console.WriteLine(item.Name);
             //}
-            Console.WriteLine("page  "+ repositories2.page);
-            Console.WriteLine("total pages  "+ repositories2.total_pages);
-            Console.WriteLine("team goals   "+repositories2.team1goals);
+            //Console.WriteLine("page  " + repositories2.Page);
+            //Console.WriteLine("total pages  " + repositories2.TotalPages);
+            //Console.WriteLine("team goals   " + repositories2.Team2Goals);
         }
     }
 }

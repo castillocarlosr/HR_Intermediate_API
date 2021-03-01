@@ -2,17 +2,24 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 
 namespace WebAPIClient
 {
     class Repos2
     {
-        public string page { get; set; }
+        [JsonPropertyName("page")]
+        public string Page { get; set; }
 
-        public int total_pages { get; set; }
+        [JsonPropertyName("total_pages")]
+        public int TotalPages { get; set; }
 
-        public string team1goals { get; set; }
+        [JsonPropertyName("team1goals")]
+        public string Team1Goals { get; set; }
+
+        [JsonPropertyName("team2goals")]
+        public string Team2Goals { get; set; }
 
     }
 }
