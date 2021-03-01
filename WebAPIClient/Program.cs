@@ -17,13 +17,14 @@ namespace WebAPIClient
             //Console.WriteLine(" Start by making an async method. ");
 
             var repositories = await ProcessRepositories();
+
             
             foreach (var item in repositories)
             {
-                //Console.WriteLine(item.Name);
+                Console.WriteLine(item.Name);
                 //Console.WriteLine(item.Description);
                 //Console.WriteLine(item.Homepage);
-                Console.WriteLine(item.Owner["login"]);
+                Console.WriteLine(item.Owner);
             }
 
             await ProcessRepositories();
@@ -45,7 +46,7 @@ namespace WebAPIClient
             Console.WriteLine("TOP!!!!!!!!!!HERE");
             var streamTask = client.GetStreamAsync("https://api.github.com/orgs/dotnet/repos");
             var repositories = await JsonSerializer.DeserializeAsync<List<Repository>>(await streamTask);
-            Console.WriteLine("BOTTOM!!!!!!!!!!HERE");
+            //Console.WriteLine("BOTTOM!!!!!!!!!!HERE");
             return repositories;
             //var streamTask2 = client.GetStreamAsync("https://jsonmock.hackerrank.com/api/football_matches?year=2011&team1=Barcelona&page=1");
             //var repositories2 = await JsonSerializer.DeserializeAsync<Repos2>(await streamTask2);
