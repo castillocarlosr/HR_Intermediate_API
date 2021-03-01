@@ -19,6 +19,6 @@ namespace WebAPIClient
         public Uri Homepage { get; set; }
 
         [JsonPropertyName("owner")]
-        public Dictionary<string, Owns> Owner { get; set; }
+        public object Owner { get; set; }
     }
 }
