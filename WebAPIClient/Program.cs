@@ -18,16 +18,23 @@ namespace WebAPIClient
 
             var repositories = await ProcessRepositories();
 
+            int total = 0;
             
             foreach (var item in repositories)
             {
-                Console.WriteLine(item.Name);
+                Console.WriteLine(item.Id);
+                total += item.Id;
                 //Console.WriteLine(item.Description);
                 //Console.WriteLine(item.Homepage);
-                Console.WriteLine(item.Owner);
+                object singleOwner = item.Owner;
+
+                Console.WriteLine(singleOwner.GetType());
+                //Console.WriteLine(item.Owner);
             }
+            Console.WriteLine("BEFORE  await:  "+ total);
 
             await ProcessRepositories();
+            Console.WriteLine("AFTER  await:  " + total);
         }
 
         //private static async Task ProcessRepositories()
