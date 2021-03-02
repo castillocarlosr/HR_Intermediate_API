@@ -31,10 +31,7 @@ namespace WebAPIClient
                 Console.WriteLine(singleOwner.GetType());
                 //Console.WriteLine(item.Owner);
             }
-            Console.WriteLine("BEFORE  await:  "+ total);
-
             await ProcessRepositories();
-            Console.WriteLine("AFTER  await:  " + total);
         }
 
         //private static async Task ProcessRepositories()
