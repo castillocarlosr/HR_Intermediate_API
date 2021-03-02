@@ -20,6 +20,11 @@ namespace WebAPIClient
 
         [JsonPropertyName("team2goals")]
         public string Team2Goals { get; set; }
+        /* try to bring in object like in the other model
+        then convert using lambda to get parameter of what's needed
+        public int TemperatureC { get; set; }
+        public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
+        */
 
     }
 }
