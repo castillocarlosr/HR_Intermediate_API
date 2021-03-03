@@ -19,7 +19,7 @@ namespace WebAPIClient
             var repositories = await ProcessRepositories();
 
             int total = 0;
-            
+            /*
             foreach (var item in repositories)
             {
                 Console.WriteLine(item.Id);
@@ -30,12 +30,21 @@ namespace WebAPIClient
 
                 Console.WriteLine(singleOwner.GetType());
                 //Console.WriteLine(item.Owner);
-            }
+            }*/
+            Console.WriteLine($"Page:  {repositories.Page}");
+            total += repositories.TotalPages;
+            Console.WriteLine($"Total Page:  {total}");
+            total = repositories.TotalPages + 6;
+            Console.WriteLine($"Total Page + six:  {total}");
+            Console.WriteLine($"TeamONE:  {repositories.Team1Goals}");
+            string tm2 = repositories.Team2Goals;
+            Console.WriteLine($"TeamTWO:  {tm2}");
             await ProcessRepositories();
         }
 
         //private static async Task ProcessRepositories()
-        private static async Task<List<Repository>> ProcessRepositories()
+        //private static async Task<List<Repository>> ProcessRepositories()
+        private static async Task<Repos2> ProcessRepositories()
         {
             client.DefaultRequestHeaders.Accept.Clear();
             client.DefaultRequestHeaders.Accept.Add(
@@ -48,12 +57,13 @@ namespace WebAPIClient
             var stringTask2 = client.GetStringAsync("https://jsonmock.hackerrank.com/api/football_matches?year=2011&team1=Barcelona&page=1");
             */
             Console.WriteLine("TOP!!!!!!!!!!HERE");
-            var streamTask = client.GetStreamAsync("https://api.github.com/orgs/dotnet/repos");
-            var repositories = await JsonSerializer.DeserializeAsync<List<Repository>>(await streamTask);
+            //var streamTask = client.GetStreamAsync("https://api.github.com/orgs/dotnet/repos");
+            //var repositories = await JsonSerializer.DeserializeAsync<List<Repository>>(await streamTask);
+            //return repositories;
+            var streamTask2 = client.GetStreamAsync("https://jsonmock.hackerrank.com/api/football_matches?year=2011&team1=Barcelona&page=1");
+            var repositories2 = await JsonSerializer.DeserializeAsync<Repos2>(await streamTask2);
             //Console.WriteLine("BOTTOM!!!!!!!!!!HERE");
-            return repositories;
-            //var streamTask2 = client.GetStreamAsync("https://jsonmock.hackerrank.com/api/football_matches?year=2011&team1=Barcelona&page=1");
-            //var repositories2 = await JsonSerializer.DeserializeAsync<Repos2>(await streamTask2);
+            return repositories2;
 
             /*
             var msg = await stringTask;
